@@ -13,15 +13,12 @@ int main() {
     } else if (personAge >= 130) {
         int year;
         cout << "What year is it? ";
-        cin >> year;
-        if (year >= 2500) {
-            cout << "Sounds plausable with advances in medicine... you can vote";
-        } else {
-            cout << "You cannot vote...";
-        }
+        cin >> year;   
+        string plauseable = (year >= 2500) ? "Sounds plausable with advances in medicine... you can vote" : "You cannot vote";
+        cout << plauseable;
     }
-    
     else {
         cout << "You are too young to vote!";    
     }
+    
 }
