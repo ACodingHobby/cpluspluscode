@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int personAge;
+    int votingAge = 18;
+    cout << "Enter you age: ";
+    cin >> personAge;
+    
+    if (personAge >= votingAge) {
+        cout << "You are of legal age (to vote)";
+    } else {
+        cout << "You are too young to vote!";    
+    }
+}
